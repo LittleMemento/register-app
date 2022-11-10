@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.register_block {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register_block .img_side {
+  width: 50%;
+  height: 100%;
+  background-image: url("./images/img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.register_block .text_side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 200px;
+}
+
+.register_block .text_side b {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d3748;
+}
+
+.register_block .text_side h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1a202c;
+  margin-top: 5px;
+}
+
+.register_block .text_side .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.register_block .text_side .form .email_pass {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.register_block .text_side .form .email_pass small {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4a5568;
+}
+
+.register_block .text_side .form .email_pass input {
+  width: 100%;
+  outline: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d3748;
+  padding: 15px 20px;
+}
+
+.register_block .text_side .form .rem_chek {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.register_block .text_side .form .rem_chek span {
+  display: flex;
+  align-items: center;
+}
+
+.register_block .text_side .form .rem_chek span small {
+  font-weight: 400;
+  font-size: 15px;
+  color: #2d3748;
+  margin-left: 5px;
+}
+
+.register_block .text_side .form .rem_chek .forgot {
+  font-weight: 400;
+  font-size: 15px;
+  color: #2c5282;
+  cursor: pointer;
+}
+
+.register_block .text_side .form .btn_in {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #04c45c;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register_block .text_side .btn_google {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2d3748;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register_block .text_side .btn_google img {
+  margin-right: 15px;
+}
+
+.register_block .text_side .dont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.register_block .text_side .dont p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #616161;
+}
+
+.register_block .text_side .dont a {
+  font-weight: 400;
+  font-size: 15px;
+  color: #2c5282;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ===== Media ===== */
+
+@media screen and (max-width: 1360px) {
+  .register_block .text_side {
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .register_block .text_side {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .register_block .img_side {
+    width: 40%;
+  }
+  .register_block .text_side {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .register_block .img_side {
+    display: none;
+  }
+  .register_block .text_side {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .register_block .text_side {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .register_block .text_side b {
+    font-size: 14px;
+  }
+
+  .register_block .text_side h1 {
+    font-size: 34px;
+  }
+
+  .register_block .text_side .form .email_pass small {
+    font-size: 14px;
+  }
+
+  .register_block .text_side .form .email_pass input {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .register_block .text_side .form .rem_chek {
+    margin-top: 20px;
+  }
+
+  .register_block .text_side .form .rem_chek span small {
+    font-size: 14px;
+  }
+
+  .register_block .text_side .form .rem_chek .forgot {
+    font-size: 14px;
+  }
+
+  .register_block .text_side .form .btn_in {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .register_block .text_side .btn_google {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .register_block .text_side .dont {
+    margin-top: 50px;
+  }
+
+  .register_block .text_side .dont p {
+    font-size: 14px;
+  }
+
+  .register_block .text_side .dont a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .register_block .text_side h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .register_block .text_side b {
+    font-size: 12px;
+  }
+
+  .register_block .text_side h1 {
+    font-size: 25px;
+  }
+
+  .register_block .text_side .form .email_pass small {
+    font-size: 12px;
+  }
+
+  .register_block .text_side .form .email_pass input {
+    font-size: 12px;
+  }
+
+  .register_block .text_side .form .rem_chek {
+    margin-top: 10px;
+  }
+
+  .register_block .text_side .form .rem_chek span input {
+    width: 10px;
+    height: 10px;
+  }
+
+  .register_block .text_side .form .rem_chek span small {
+    font-size: 12px;
+  }
+
+  .register_block .text_side .form .rem_chek .forgot {
+    font-size: 12px;
+  }
+
+  .register_block .text_side .dont p {
+    font-size: 12px;
+  }
+
+  .register_block .text_side .dont a {
+    font-size: 12px;
+  }
+}
